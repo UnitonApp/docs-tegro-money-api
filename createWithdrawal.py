@@ -4,10 +4,12 @@ import time
 import requests
 from hashlib import sha256
 
-api_key = 'EEFA1913EA9D9351469B1E5D852A'
+# ВНИМАНИЕ: Замените на ваши реальные API данные!
+# Никогда не оставляйте реальные ключи в коде!
+api_key = 'YOUR_SECRET_API_KEY_HERE'  # Замените на ваш секретный ключ
 
 data = {
-    'shop_id': '1913EA9D9351469B1E5D852A',
+    'shop_id': 'YOUR_SHOP_ID_HERE',  # Замените на ваш shop_id
     'nonce': int(time.time()),
     'currency': 'RUB',
     'account': 'killme',

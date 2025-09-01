@@ -692,3 +692,6 @@ dmypy.json
 cython_debug/
 
 /media/
+
+# Tegro API configuration (contains secret keys)
+config.py
