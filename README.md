@@ -1,4 +1,24 @@
-# Общая информация
+# Tegro.money API Documentation
+
+## 🚀 Быстрый старт
+
+### Установка зависимостей
+```bash
+pip install -r requirements.txt
+```
+
+### Настройка API ключей
+1. Скопируйте файл `config_template.py` в `config.py`:
+   ```bash
+   cp config_template.py config.py
+   ```
+2. Отредактируйте `config.py` и укажите ваши реальные API данные
+3. **ВАЖНО**: Никогда не добавляйте `config.py` в git!
+
+### Безопасность
+⚠️ **ВНИМАНИЕ**: В примерах кода используются placeholder значения. Замените их на ваши реальные API ключи перед использованием.
+
+## 📋 Общая информация
 ***Получение API ключа***
 
 API ключ для доступа к REST сервису Tegro.money можно сгенерировать на странице настроек магазина https://tegro.money/my/shop-settings/
@@ -17,10 +37,11 @@ import hashlib
 import hmac
 import requests
 
-api_key = 'EEFA1913EA9D9351469B1E5D852A'
+# ЗАМЕНИТЕ на ваши реальные данные!
+api_key = 'YOUR_SECRET_API_KEY_HERE'
 
 data = {
-    'shop_id': '1913EA9D9351469B1E5D852A',
+    'shop_id': 'YOUR_SHOP_ID_HERE',
     'nonce': str(int(time.time())),
 }
 

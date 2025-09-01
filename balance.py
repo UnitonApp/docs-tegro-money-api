@@ -4,33 +4,13 @@ import time
 import requests
 from hashlib import sha256
 
-api_key = 'EEFA1913EA9D9351469B1E5D852A'
+# ВНИМАНИЕ: Замените на ваши реальные API данные!
+# Никогда не оставляйте реальные ключи в коде!
+api_key = 'YOUR_SECRET_API_KEY_HERE'  # Замените на ваш секретный ключ
 
 data = {
-    "shop_id": "1913EA935149B1E5D852A",
-    "nonce": 1613435880,
-    "currency": "RUB",
-    "amount": 1200,
-    "order_id": "test order",
-    "payment_system": 5,
-    "fields": {
-        "email": "user@email.ru",
-        "phone": "79111231212"
-    },
-    "receipt": {
-        "items": [
-        {
-            "name": "test item 1",
-            "count": 1,
-            "price": 600
-        },
-        {
-            "name": "test item 2",
-            "count": 1,
-            "price": 600
-        }
-        ]
-    }
+    "shop_id": "YOUR_SHOP_ID_HERE",  # Замените на ваш shop_id
+    "nonce": int(time.time())
 }
 
 body = json.dumps(data)
